@@ -10,7 +10,7 @@ const navItems = [
 ];
 
 const Responsive = ({ menu, setMenu }) => {
-    const handleMenuClose = ()=>{
+    const handleMenuClose = () => {
         setMenu(false)
 
     }
@@ -24,7 +24,7 @@ const Responsive = ({ menu, setMenu }) => {
                             <CgProfile className='text-4xl' />
                         </div>
                         <div className='px-3 text-red-800 '>
-                            Hello Mayank.
+                            Hello User.
                         </div>
 
                     </div>
@@ -45,7 +45,10 @@ const Responsive = ({ menu, setMenu }) => {
                                 ))}
                             </ul>
                             <div>
-                                <button className='hover  md:block  bg-red-400 font-bold rounded-lg px-4 py-1 md:px-4  md:py-1'>Login</button>
+                                <NavLink to='/login'>
+
+                                    <button onClick={handleMenuClose} className='hover  md:block  bg-red-400 font-bold rounded-lg px-4 py-1 md:px-4  md:py-1'>Login</button>
+                                </NavLink>
                             </div>
                         </div>
                     </div>
